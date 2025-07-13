@@ -36,7 +36,7 @@ const App = () => {
         <Navbar />
       </div>
 
-      <div className="bg-bgDark2">
+      <div className="bg-bgDark2 mobile-container">
         <div>
           <Filter filterData={filterData}
           category = {category}
@@ -44,7 +44,7 @@ const App = () => {
         </div>
 
         <div className="w-11/12 max-w-[1200px] mx-auto flex flex-wrap justify-center items-center
-      min-h-[50vh]">
+      min-h-[50vh] px-2 sm:px-0">
           {
             loading ? (<Spinner />) : <Cards courses={courses} category={category}/>
           }

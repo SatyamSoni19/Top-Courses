@@ -16,3 +16,81 @@
         transform: rotate(1turn);
     }
 }
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+    .mobile-container {
+        padding: 0 1rem;
+    }
+    
+    .mobile-text {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    
+    .mobile-card {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .mobile-filter {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0.5rem;
+    }
+    
+    .mobile-filter-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        min-width: 80px;
+    }
+    
+    .mobile-nav {
+        padding: 0.75rem 1rem;
+    }
+    
+    .mobile-nav-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-text {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+    
+    .mobile-nav-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    
+    .mobile-filter-btn {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.75rem;
+        min-width: 70px;
+    }
+    
+    .mobile-card {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 360px) {
+    .mobile-nav-title {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+    
+    .mobile-filter-btn {
+        font-size: 0.6875rem;
+        padding: 0.25rem 0.5rem;
+        min-width: 60px;
+    }
+    
+    .mobile-card {
+        max-width: 240px;
+    }
+}
